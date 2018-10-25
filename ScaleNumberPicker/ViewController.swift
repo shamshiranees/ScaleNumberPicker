@@ -21,47 +21,39 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
       
     }
 
-    
+    var rowHeight = 80
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        
         pickerView.subviews.forEach({
-            
             $0.isHidden = $0.frame.height < 1.0
         })
         return 1
     }
-    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 100
     }
     
-    
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         return pickerView.frame.width
     }
-    
-    // MARK: - Delegate methods
-    // MARK: UIPickerViewDelegate methods
-    
+
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        return 80
+        return CGFloat(rowHeight)
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedHeightLabel.text = "Your height is \(row+150)cm"
-//        print("Selected height \(row+150)")
+
     }
-    
-    
-    
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let rowData = row+150
-        return self.createScaleView(rowHeight: 80,widthOfScaleView: 80, title: "\(rowData)cm", pickerView: pickerView)
+        return self.createScaleView(rowHeight: Double(rowHeight), title: "\(rowData)cm", pickerView: pickerView)
+        
+    
      
     }
     
     
-    func createScaleView(rowHeight height:Double,widthOfScaleView width:Double? = 45,numberOfSeperation:Int? = 5,title:String,bgColor:UIColor? = UIColor.clear,lineColor:UIColor? = UIColor.white,titleColor:UIColor? = UIColor.white,pickerView:UIPickerView,fontSize:CGFloat?=20)->UIView{
+    func createScaleView(rowHeight height:Double,widthOfScaleView width:Double? = 80,numberOfSeperation:Int? = 5,title:String,bgColor:UIColor? = UIColor.clear,lineColor:UIColor? = UIColor.white,titleColor:UIColor? = UIColor.white,pickerView:UIPickerView,fontSize:CGFloat?=20)->UIView{
         if (numberOfSeperation!<5 || numberOfSeperation!%2 == 0 ){
             let nilView = UIView()
             print("Invalid number of seperation.Please enter an odd number > 4")
