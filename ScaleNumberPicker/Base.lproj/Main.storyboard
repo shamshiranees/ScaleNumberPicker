@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D0Z-aq-wN8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8Uk-Ob-6Ks">
+            <objects>
+                <viewController id="D0Z-aq-wN8" customClass="ViewController" customModule="ScaleNumberPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k67-O4-7x1"/>
+                        <viewControllerLayoutGuide type="bottom" id="75r-NF-yIk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="keA-uC-rA9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bab-yB-U6R">
+                                <rect key="frame" x="10" y="170" width="355" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="L83-hj-4m8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="D0Z-aq-wN8" id="PpI-2I-ukX"/>
+                                    <outlet property="delegate" destination="D0Z-aq-wN8" id="nZ4-J7-d0C"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Your Height" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uj3-Ai-KRA">
+                                <rect key="frame" x="79.5" y="105" width="216" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dV-sR-5vB">
+                                <rect key="frame" x="188.5" y="500" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bab-yB-U6R" firstAttribute="top" secondItem="k67-O4-7x1" secondAttribute="bottom" constant="150" id="9ef-Cx-7Sm"/>
+                            <constraint firstItem="bab-yB-U6R" firstAttribute="leading" secondItem="Grt-RW-LUN" secondAttribute="leading" constant="10" id="CRB-YI-ukJ"/>
+                            <constraint firstItem="uj3-Ai-KRA" firstAttribute="centerX" secondItem="keA-uC-rA9" secondAttribute="centerX" id="FqA-u8-i0k"/>
+                            <constraint firstItem="9dV-sR-5vB" firstAttribute="top" secondItem="bab-yB-U6R" secondAttribute="bottom" constant="30" id="HGG-6d-0Cn"/>
+                            <constraint firstItem="9dV-sR-5vB" firstAttribute="centerX" secondItem="keA-uC-rA9" secondAttribute="centerX" id="emw-JW-ru4"/>
+                            <constraint firstItem="Grt-RW-LUN" firstAttribute="trailing" secondItem="bab-yB-U6R" secondAttribute="trailing" constant="10" id="lbH-sF-YkH"/>
+                            <constraint firstItem="bab-yB-U6R" firstAttribute="top" secondItem="uj3-Ai-KRA" secondAttribute="bottom" constant="30" id="rML-vv-MFd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Grt-RW-LUN"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="bab-yB-U6R" id="0mi-t0-Sf2"/>
+                        <outlet property="selectedHeightLabel" destination="9dV-sR-5vB" id="f82-2I-qNF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwX-Jc-5n7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>
