@@ -3,7 +3,7 @@ Custom UIPickerView with scale UI
 
 ## ScreenShots
 
-![ScreenShot](https://github.com/shamshiranees/ScaleNumberPicker/blob/master/ScaleNumberPicker/screenShot.png)
+![ScreenShot](https://github.com/shamshiranees/ScaleNumberPicker/blob/master/ScaleNumberPicker/screenShot1.png)
 
 ## Example
 
