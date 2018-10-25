@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5131CEC12181F2FA00E54D4B /* screenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5131CEC02181F2FA00E54D4B /* screenShot.png */; };
+		5131CEC52181F76000E54D4B /* screenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5131CEC42181F76000E54D4B /* screenShot.png */; };
 		513F054121804685003A5AD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F054021804685003A5AD4 /* AppDelegate.swift */; };
 		513F054321804685003A5AD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F054221804685003A5AD4 /* ViewController.swift */; };
 		513F054621804685003A5AD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513F054421804685003A5AD4 /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5131CEC02181F2FA00E54D4B /* screenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot.png; sourceTree = "<group>"; };
+		5131CEC42181F76000E54D4B /* screenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot.png; sourceTree = "<group>"; };
 		513F053D21804684003A5AD4 /* ScaleNumberPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaleNumberPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		513F054021804685003A5AD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		513F054221804685003A5AD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				513F054021804685003A5AD4 /* AppDelegate.swift */,
 				513F054221804685003A5AD4 /* ViewController.swift */,
-				5131CEC02181F2FA00E54D4B /* screenShot.png */,
+				5131CEC42181F76000E54D4B /* screenShot.png */,
 				513F054421804685003A5AD4 /* Main.storyboard */,
 				513F054721804685003A5AD4 /* Assets.xcassets */,
 				513F054921804685003A5AD4 /* LaunchScreen.storyboard */,
@@ -129,7 +129,7 @@
 				513F054B21804685003A5AD4 /* LaunchScreen.storyboard in Resources */,
 				513F054821804685003A5AD4 /* Assets.xcassets in Resources */,
 				513F054621804685003A5AD4 /* Main.storyboard in Resources */,
-				5131CEC12181F2FA00E54D4B /* screenShot.png in Resources */,
+				5131CEC52181F76000E54D4B /* screenShot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
